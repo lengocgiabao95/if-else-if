@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let userName = prompt('nhap ten dang nhap');
+        
+        if (userName == 'Admin') {
+            let passWord = prompt('nhap mat khau');
+            if(passWord == 'TheMaster') {
+                alert("welcome");
+            } else if (passWord == null) {
+                alert("Canceled");
+            } else {
+                alert("wrong password");
+            }
+        
+            
+        } else if (userName == null) {
+            alert('Canceled');
+        } else {
+            alert ("i dont know you");
+        }
+
+
+    </script>
+</body>
+</html>
